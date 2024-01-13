@@ -4,10 +4,11 @@ metadata:
   name: gitops-service
 spec:
   type: {{ .Values.service_type }}
+  loadBalancerIP: {{ .Values.loadbalancer_ip }}
   ports:
     - name: {{ .Chart.Name }}
       protocol: TCP
-      port: 81
+      port: 80
       targetPort: 8080
   selector:
     app: {{ .Values.label }}

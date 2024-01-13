@@ -12,4 +12,5 @@ imageConfig:
 
 # Service
 service_type: LoadBalancer
+loadbalancer_ip: 164.70.65.149
 
