@@ -8,7 +8,7 @@ image:
   tag: 0
 
 imageConfig:
-  pullPolicy: ifNotPresent
+  pullPolicy: IfNotPresent
 
 # Service
 service_type: LoadBalancer
